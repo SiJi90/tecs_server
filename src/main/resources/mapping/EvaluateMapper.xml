@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.EvaluateMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.beans.Evaluate">
+        <id column="evaluate_id" property="evaluateId" />
+        <result column="evaluate_item_id" property="evaluateItemId" />
+        <result column="evaluate_type" property="evaluateType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        evaluate_id, evaluate_item_id, evaluate_type
+    </sql>
+
+</mapper>

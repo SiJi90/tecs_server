@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.EvaluateItemMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.beans.EvaluateItem">
+        <id column="item_id" property="itemId" />
+        <result column="item_desc" property="itemDesc" />
+        <result column="item_type" property="itemType" />
+        <result column="option_1" property="option1" />
+        <result column="option_2" property="option2" />
+        <result column="option_3" property="option3" />
+        <result column="option_4" property="option4" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        item_id, item_desc, item_type, option_1, option_2, option_3, option_4
+    </sql>
+
+</mapper>
